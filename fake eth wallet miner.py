@@ -1,4 +1,4 @@
-#basic fake eth wallet miner by drako
+#basic fake eth wallet miner by drak-o
 
 
 import random
@@ -22,7 +22,7 @@ eth_ammount = str(round(random.uniform(0.5, 1), 2)) #generates fake eth ammount
 random_id = ''
 list_ = str('A''B''C''D''E''F''G''H''I''J''K''L''M''N''O''P''Q''R''S''T''U''V''W''X''Y''Z''a''b''c''d''e''f''g''h''i''j''k''l''m''n''o''p''q''r''s''t''u''v''w''x''y''z''1''2''3''4''5''6''7''8''9''0')
 
-print("ETH wallet miner by Drako") #you can delete this and add your own tag/name
+print("ETH wallet miner by Drak-o") #you can delete this and add your own tag/name
 time.sleep(5)
       
 
