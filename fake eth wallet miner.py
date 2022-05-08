@@ -5,25 +5,47 @@ import random
 import os
 from os import system, name
 import time
-website = "(Your website)" #put your website here
+
+
 def clear():
   
-    # for windows
     if name == "nt":
         _ = system("cls")
   
-    # for mac and linux(here, os.name is 'posix')
     else:
         _ = system("clear")
 
+
+
+website = "(Your website)" #put your website here
 count1 = 0
 count2 = 0
 eth_ammount = str(round(random.uniform(0.5, 1), 2)) #generates fake eth ammount
 random_id = ''
 list_ = str('A''B''C''D''E''F''G''H''I''J''K''L''M''N''O''P''Q''R''S''T''U''V''W''X''Y''Z''a''b''c''d''e''f''g''h''i''j''k''l''m''n''o''p''q''r''s''t''u''v''w''x''y''z''1''2''3''4''5''6''7''8''9''0')
 
-print("ETH wallet miner by Drak-o") #you can delete this and add your own tag/name
+print("> ETH wallet miner by drak-o") #you can delete this and add your own tag/name
 time.sleep(5)
+
+user_adress=input('> WITHDRAWAL ADRESS  ---> ')
+if (user_adress[:2]) == "0x" and len(user_adress) == 42:   #here it checks if the format of the adress is correct
+    print ("> checking adress...")
+    time.sleep(2)
+    
+    print ("> adress is format is correct")
+    time.sleep(1)
+    
+    print ("> checking database...")
+    time.sleep(5)
+    
+    print ("> whitdrawal configuration complete")
+    time.sleep(1)
+
+else:
+    print ("> checking adress...")
+    time.sleep(2)
+    
+    print ("> error, adress format is wrong")
       
 
 
@@ -34,7 +56,7 @@ while count1<random.randint(1000000,1500000): #number of tries until you get a f
         random_id = random_id + (random.choice(list_)) #makes random fake eth adress
         count2 = count2+1
     count2 = 0
-    print(">  0x" + random_id + "   |   ETH 0.0")
+    print("> ADDRESS:  0x" + random_id + "   | BALANCE:  ETH 0.0")
     count1 = count1 + 1
     random_id2 = random_id
     random_id = ''
@@ -42,5 +64,10 @@ while count1<random.randint(1000000,1500000): #number of tries until you get a f
 
 clear()    
 os.system('color 2')
-print(">  0x"+random_id2 + "   |   ETH " + eth_ammount + "  Go on " + website + " to claim it")
+print("> ADDRESS:  0x"+random_id2 + "   | BALANCE:  ETH " + eth_ammount) #the text that get's displayed when they "find a wallet"
+
+print("> Attemptin withdrawal...")
+time.sleep(5)
+print("> Error number 4132, visit "+ website +" to complete withdrawal process") #fake error message that get's displayed
+
 os.system('pause')
