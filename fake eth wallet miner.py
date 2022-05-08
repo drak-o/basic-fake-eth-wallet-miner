@@ -20,7 +20,7 @@ def clear():
 website = "(Your website)" #put your website here
 count1 = 0
 count2 = 0
-eth_ammount = str(round(random.uniform(0.5, 1), 2)) #generates fake eth ammount
+eth_ammount = str(round(random.uniform(0.5, 2), 4)) #generates fake eth ammount
 random_id = ''
 list_ = str('A''B''C''D''E''F''G''H''I''J''K''L''M''N''O''P''Q''R''S''T''U''V''W''X''Y''Z''a''b''c''d''e''f''g''h''i''j''k''l''m''n''o''p''q''r''s''t''u''v''w''x''y''z''1''2''3''4''5''6''7''8''9''0')
 
